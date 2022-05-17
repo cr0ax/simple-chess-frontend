@@ -6,7 +6,7 @@
   "apps": [
     {
       "root": "src",
-      "outDir": "dist",
+      "outDir": "dist/chess",
       "assets": [
         "assets",
         "favicon.ico"
