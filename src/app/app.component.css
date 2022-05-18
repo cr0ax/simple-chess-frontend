@@ -6,8 +6,8 @@ body{
 }
 
 .chessboard{
-  width: 300px;
-  height: 350px;
+  width: 320px;
+  height: 320px;
 }
 
 .chessBoardSquare{
