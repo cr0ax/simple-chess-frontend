@@ -1,12 +1,10 @@
-      <table class="table chessboard">
-        <tbody>
-          <tr *ngFor="let row of board; let x = index">
-            <td *ngFor="let cell of row; let y = index"
-                class="chessBoardSquare"
-                (click)="clickedOn(x,y)"
-                [ngClass]="{'highlighted': cell.highlight, 'white': isWhite(x,y), 'black': isBlack(x,y) }">
-                <img class="pieceImg" src='{{cell.src}}' />
-            </td>
-          </tr>
-        </tbody>
-      </table>
+<div class="table chessboard">
+    <div class="chessBoardRow" *ngFor="let row of board; let x = index">
+      <div *ngFor="let cell of row; let y = index"
+       class="chessBoardSquare"
+       (click)="clickedOn(x,y)"
+       [ngClass]="{'highlighted': cell.highlight, 'white': isWhite(x,y), 'black': isBlack(x,y) }">
+        <img class="pieceImg" src='{{cell.src}}' />
+      </div>
+    </div>
+</div>
